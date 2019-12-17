@@ -1,0 +1,390 @@
+@media all and (max-width: 1160px) {
+    
+    /* layout */
+    .box_width { width: 100%;}
+    #wrap {
+        overflow: hidden;
+        min-width: 100%;}
+    #header { 
+        padding-top: 16px;
+        height: 52px;}
+    #navWrap { float: none;}
+    #visual { margin-bottom: 50px;}
+    
+    /* header */
+    .logo {
+        margin-top: 0;
+        margin-left: 4%;
+        width: 50px;
+        height: 20px;
+        margin-top: 5px;
+    }
+    .logo a img { 
+        height: 100%;
+        width: 100%;
+    }
+
+    .navTop {
+        margin-top: 0;
+    }
+    .navTop .schForm {
+        width: 62%;
+        margin: 0 auto;
+        float: none;
+    }
+    .tmenu { display: none;}
+
+    .gBtn {
+        display: block;
+        background: url(../img/ham.png) no-repeat;
+        width: 20px;
+        height: 20px;
+        text-indent: -9999px;
+        overflow: hidden;
+        position: absolute;
+        top: 28px;
+        right: 6%;
+    }
+    .gnbM {
+        width: 44%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #262626;
+        z-index: 10;
+        display: none;
+    }
+    .gnbM .gnb {
+        margin-top: 0;
+        padding-top: 20px;
+        width: 80%;
+        float: right;
+        z-index: 10;
+    }
+    .gnbM .gnb li {
+        float: right;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        margin-right: 0;
+        line-height: 82px;
+        height: 62px;
+    }
+    .gnbM .tmenuM {
+        display: block;
+        position: absolute;
+        top: 380px;
+        right: 10%;
+    }
+    .gnbM .tmenuM li {
+        float: left;
+        margin-left: 20px;
+    }
+    .gnbM .tmenuM li:first-child {
+        border-right: 1px solid #fff;
+        padding-right: 20px;
+    }
+    .gnb li a:hover, .tmenuM li a:hover { color: #ffe200;}
+    
+    .gnbM .exit {
+        display: block;
+        background: url(../img/exit.png) no-repeat;
+        background-size: 100%;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 380px;
+        left: 20%;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+    
+    /* visual */
+    .scroll { display: none;}
+    .slider {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50%;
+    }
+    .imgWrap {
+        height: auto;
+        padding-bottom: 50%;
+    }
+    .imgWrap.v1, .imgWrap.v2, .imgWrap.v3 { background-size: auto 100%;}
+    .imgWrap.v2 .v2_box {
+        top: 50%;
+        margin-top: -80px;
+        left: 50%;
+        margin-left: -260px;
+    }
+    .imgWrap.v2 .v2_box p {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .imgWrap.v2 .v2_box .v2_t { font-size: 24px;}
+    .imgWrap.v2 .v2_box .v2_t span { font-size: 40px;}
+    .imgWrap.v2 .v2_box .v2_more {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        top: 126px;
+    }
+    .imgWrap.v3 .v3_box {
+        top: 50%;
+        margin-top: -116px;
+        right: 50%;
+        margin-right: -380px;
+    }
+    .imgWrap.v3 .v3_box p {
+        line-height: 60px;
+        font-size: 24px;}
+    .imgWrap.v3 .v3_box span { font-size: 50px;}
+
+    .slider .indicator {
+        bottom: 4%;
+    }
+    .slider .indicator .indi li {
+        width: 100px;
+        margin-right: 30px;
+    }
+    /* mainContents */
+    .conWrap { 
+        margin-bottom: 50px;
+    }
+    .conWrap .mbox_t { font-size: 20px;}
+    .conWrap .mbox { 
+        width: 46%;
+        height: 46%;
+    }
+    .conWrap  .mbox.m1,  .conWrap .mbox.m3,
+    .conWrap .mbox.m2, .conWrap .mbox.m4 { margin: 0 2% 4% 2%;}
+    .conWrap .mbox .mbg {
+        width: 100%;
+        height: 100%;
+    }
+    .conWrap .mbg p {
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -36px;
+        font-size: 12px;
+        line-height: 0;
+    }
+    .conWrap .mbg span {
+        font-size: 20px;
+    }
+    .conWrap .mbg p a {
+        top: 50%;
+        margin-top: -7px;
+        width: 20px;
+        height: 12px;
+        background-size: 100%;
+    }
+
+    .event {
+        background-size: auto 100%;
+        height: auto;
+        width: 100%;
+        padding-bottom: 12%;
+        margin-bottom: 50px;
+    }
+
+    .guideWrap { margin-bottom: 50px;}
+    .guideWrap .gbox_t { font-size: 20px;}
+    .guideWrap .gbox { 
+        margin-right: 0;
+        width: 30%;
+        margin: 0 1% 0 2%;
+    }
+    .guideWrap .gbox img {
+        width: 100%;
+        height: 100%;
+    } 
+    .guideWrap .gbox .gbg {
+        width: 100%;
+        height: 100%;
+    }
+    .guideWrap .gbox .gbg p {
+        font-size: 12px;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -37px;
+    }
+    .guideWrap .gbox .gbg span { font-size: 20px;}
+
+    .brdWrap { margin-bottom: 50px;}
+    .brd {
+        width: 100%;
+    }
+    .color {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .color li {
+        width: 28%;
+        height: auto;
+    }
+    .color li a img { width: 100%;}
+    .color .hide {
+        display: block;
+    }
+
+    .companyWrap { margin-bottom: 50px;}
+    .company.c1, .company.c2 {
+        width: 48%;
+        height: 48%;
+    }
+    .company.c1 img, .company.c2 img { width: 100%;}
+    .company { float: left;}
+    .company.c1 {
+        margin-right: 0;
+        position: relative;
+        margin: 0 1%;
+    }
+    .company.c2 {
+        position: relative;
+        margin: 0 1%;
+    }
+
+    .company .cbg {
+        width: 100%;
+        height: 100%;
+    }
+    .company .cbg a {
+        bottom: 16px;
+        left: 16px;
+        font-size: 24px;
+    }
+    .addr { margin-left: 4%;}
+    .sns { margin-right: 4%;}
+        
+    
+}
+@media all and ( max-width: 640px ) {
+    #header { height: 36px;}
+    .logo {
+        margin-top: 0;
+        margin-left: 4%;
+        width: 40px;
+        height: 10px;
+        margin-top: -2px;
+    }
+    .logo a img { 
+        height: 100%;
+        width: 100%;
+    }
+    .navTop .schForm { width: 50%;}
+    .navTop .schForm input {height: 24px;}
+    .navTop .schForm .schBtn {
+        top: 2.5px;
+        width: 16px;
+        height: 16px;
+        background-size: 100%;
+    }
+    .gBtn {
+        top: 20px;
+        width: 16px;
+        height: 16px;
+        background-size: 100%;
+    }
+    .gnbM .gnb li { font-size: 12px;}
+    .gnbM .tmenuM {
+        top: 362px;
+        right: 16px;
+    }
+    .gnbM .tmenuM li {
+        margin-left: 10px;
+    }
+    .gnbM .tmenuM li:first-child { padding-right: 9px;}
+    .gnbM .exit {
+        top: 30px;
+        left: 80%;
+    }
+    .imgWrap.v2 .v2_box {
+        margin-top: -16px;
+        margin-left: -118px;
+    }
+    .imgWrap.v2 .v2_box .bye { display: none;}
+    .imgWrap.v2 .v2_box .v2_t {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .imgWrap.v2 .v2_box .v2_t span { font-size: 20px;}
+    .imgWrap.v2 .v2_box .v2_more {
+        width: 50px;
+        height: 18px;
+        font-size: 10px;
+        line-height: 19.5px;
+        top: 44px;
+    }
+    .imgWrap.v3 .v3_box {
+        margin-top: -18px;
+        margin-right: -154px
+    }
+    .imgWrap.v3 .v3_box p {
+        line-height: 26px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .imgWrap.v3 .v3_box span { font-size: 22px;}
+
+    .slider .indicator .indi li {
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    .conWrap .mbg p a {
+        width: 16px;
+        height: 10 px;
+        background-size: 100%;
+        margin-top: -6px;
+    }
+    .color li { width: 25%;}
+
+    .company .cbg a {
+        bottom: 10px;
+        left: 26px;
+        font-size: 12px;
+    }
+
+    #footer {
+        height: auto;
+        position: relative;
+    }
+    
+    .addr {
+        text-align: center;
+        float: none;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .sns {
+        margin-top: 0;
+        position: absolute;
+        top:  10%;
+        left: 50%;
+        margin-left: -57.5px;
+    }
+    .sns li {
+        width: 25px;
+        height: 25px;
+    }
+    .sns .face {
+        margin-left: 0;
+        background-size: 300%;
+    }
+    .sns .face:hover { background-position:  0 -25px;}
+
+    .sns .insta, .sns .blog { background-size: 300%;}
+
+    .sns .insta { background-position: -25px 0;}
+    .sns .insta:hover { background-position: -25px -25px;}
+
+    .sns .blog { background-position: -50px 0;}
+    .sns .blog:hover { background-position: -50px -25px;}
+}

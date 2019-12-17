@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>조광페인트</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(function(){
+            $('.gBtn').click(function(){
+                $('.gnbM').show()
+                $('.gnbM').stop().animate({right: 0})
+            })
+            
+            $('.exit').click(function(){
+                $('.gnbM').animate({right: '-44%'})
+            })
+    
+            $('.imgWrap:not(:first)').hide()
+            
+        
+            
+            
+            $('.indi li').click(function(){
+                
+                n = $(this).index() + 1
+                if( $(this).hasClass('on') == false ){
+                    $('.imgWrap').fadeOut()
+                }
+                
+                $('.imgWrap.v'+n).fadeIn()
+                
+                $('.indi li').removeClass('on')
+                $(this).addClass('on')
+                
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+            <div id="headerWrap">
+                    <header id="header" class="box_width">
+                        <h1 class="logo"><a href="#"><img src="img/logo.png" alt="조광페인트"></a></h1>
+                        
+                        <nav id="navWrap">
+                            <div class="navTop">
+                               
+                                <div class="schForm">
+                                    <form action="#">
+                                        <fieldset>
+                                            <legend class="hide">검색</legend>
+                                            <label for="schTxt">검색</label>
+                                            <input type="search" id="schTxt" placeholder="반갑습니다 조광페인트 입니다.">
+                                            <button type="button" class="schBtn">검색</button>
+                                        </fieldset>
+                                    </form>
+                                </div><!-- /schForm -->
+                                
+                                <ul class="tmenu">
+                                    <li><a href="#">LOGIN</a></li>
+                                    <li><a href="#">SIGN UP</a></li>
+                                </ul><!-- /tmenu --> 
+                            </div><!-- /navTop -->  
+        
+                           <!-- 반응형 화면에서만 나오는 버튼입니다 --> 
+                            <div class="gnbM">
+                                <div class="gnb">
+                                    <ul>
+                                        <li><a href="#">COLOR</a></li>
+                                        <li><a href="#">PRODUCTS</a></li>
+                                        <li><a href="#">INSPIRATION</a></li>
+                                        <li><a href="#">ABOUT US</a></li>
+                                        <li><a href="#">STORES</a></li>
+                                    </ul>
+                                </div><!-- /gnb -->
+                                
+                                <ul class="tmenuM">
+                                    <li><a href="#">MY PAGE</a></li>
+                                    <li><a href="#">SIGN UP</a></li>
+                                </ul><!-- /tmenuM -->
+                                
+                                <div class="exit"><a href="#">exit</a></div>
+                            </div>
+                                
+                            <a href="#" class="gBtn onlyM">쀼쀼</a>
+                        </nav><!-- /navWrap -->
+                    </header>
+                </div><!-- /headerWrap -->    
+                
+                <div id="visual">
+                    <div class="slider">
+                        
+                        <div class="imgWrap v1"><a href="#"></a></div>
+                        <div class="imgWrap v2">
+                            <div class="v2_box">
+                                    <p class="bye">35가지의 컬러, 불투명 세미글로스 마감</p>
+                                    <p class="v2_t">나만의 감성,<br><span>메탈릭 페인트</span><br> 
+                                    <a href="#" class="v2_more">더 보기</a>        
+                            </div>
+                        </div>    
+                        <div class="imgWrap v3"><a href="#">
+                            <div class="v3_box">
+                                <p>독보적인 전착도료 기술<br><span>BF 2001 QD</span></p>
+                            </div>
+                        </a></div>
+                        <div class="imgWrap v4"><a href="#"></a></div>
+                        
+                        <div class="indicator">
+                            <ul class="indi">
+                                <li class="on"><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div><!-- /indicator -->
+                        
+                        <div class="scroll bounce-in-bottom"></div>
+                    </div><!-- /slider -->
+                </div><!-- /visual -->
+                
+                <div id="mainContents">
+                    <div class="conWrap box_width clearfix">
+                        <h2 class="mbox_t">제품소개</h2>
+                        
+                        <div class="mbox m1">
+                            <div><a href="#"><img src="img/mcon1.png" alt="가정용도료"></a></div>
+                            <div class="mbg">
+                                <p>가정용도료<span>+</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="mbox m2">
+                            <div><a href="#"><img src="img/mcon2.png" alt="건축용도료"></a></div>
+                            <div class="mbg">
+                                <p>건축용도료<span>+</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="mbox m3">
+                            <div><a href="#"><img src="img/mcon3.png" alt="자동차도료"></a></div>
+                            <div class="mbg">
+                                <p>자동차도료<span>+</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="mbox m4">
+                            <div><a href="#"><img src="img/mcon4.png" alt="더 보기"></a></div>
+                            <div class="mbg">
+                                <p>MORE<a href="#"></a></p>
+                            </div>
+                        </div>  
+                    </div><!-- /conWrap -->
+                    
+                    <div class="event"><a href="#"></a></div>
+                    
+                    <div class="guideWrap box_width clearfix">
+                        <h2 class="gbox_t">페인팅 가이드</h2>
+                        
+                        <div class="gbox g1">
+                            <div><a href="#"><img src="img/guide1.png" alt="페인팅 재료"></a></div>
+                            <div class="gbg">
+                                <p>페인팅 재료<span>+</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="gbox g2">
+                            <div><a href="#"><img src="img/guide2.png" alt="셀프 가구리폼"></a></div>
+                            <div class="gbg">
+                                <p>셀프 가구리폼<span>+</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="gbox g3">
+                            <div><a href="#"><img src="img/guide3.png" alt="영상 가이드"></a></div>
+                            <div class="gbg">
+                                <p>영상 가이드<span>+</span></p>
+                            </div>
+                        </div>
+                    </div><!-- /guideWrap -->
+                    
+                    <div class="brdWrap box_width clearfix">
+                        <div class="brd">
+                            <h3>공지사항</h3>
+                            <ul>
+                                <li><a href="#">6월 현중일 / 지방선거일 지점별 영업시간 안내</a></li>
+                                <li><a href="#">조광페인트 스탬프 이벤트 안내</a></li>
+                                <li><a href="#">2018 조광페인트 작가 안내</a></li>
+                                <li><a href="#">[원데이 클래스] 26기 모집 안내</a></li>    
+                            </ul>
+                            
+                            <div class="more"><a href="#"></a></div>
+                        </div><!-- /brd -->
+                        
+                        <div class="color">
+                            <h3>컬러갤러리</h3>
+                            <ul>
+                                <li><a href="#"><img src="img/color1.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/color4.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/color3.png" alt=""></a></li>
+                                <li class="hide"><a href="#"><img src="img/color2.png" alt=""></a></li>
+                                <li class="hide"><a href="#"><img src="img/color5.png" alt=""></a></li>
+                                <li class="hide"><a href="#"><img src="img/color6.png" alt=""></a></li>
+                            </ul>
+        
+                            <div class="more"><a href="#"></a></div>
+        
+                        </div>
+                    </div><!-- /brdWrap -->
+                    
+                    <div class="companyWrap box_width clearfix">
+                        <div class="company c1">
+                            <div><a href="#"><img src="img/company.jpg" alt="회사소개"></a></div>
+                            
+                            <div class="cbg"><a href="#">회사소개</a></div>
+                        </div> 
+                        
+                        <div class="company c2">
+                            <div><a href="#"><img src="img/recruit.png" alt="인재채용"></a></div>
+                            
+                            <div class="cbg"><a href="#">인재채용</a></div>
+                        </div> 
+                    </div><!-- /companyWrap -->
+                </div><!-- /mainContents -->
+                
+                <div id="footerWrap">
+                    <footer id="footer" class="box_width clearfix">
+                        <div class="fbox">
+                            <address class="addr">부산광역시 사상구 삼덕로5번길 148 TEL : 051) 304-7701<br>사업자등록번호 : 606-81-00205
+                            <span class="copy">COPYRIGHT ⓒ 조광페인트(주). All Rights Reserved.</span></address>
+                        </div>
+                        
+                        <div class="sns">
+                            <ul>
+                                <li class="face"><a href="#"></a></li>
+                                <li class="insta"><a href="#"></a></li>
+                                <li class="blog"><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </footer><!-- /footer -->
+                </div><!-- /footerWrap -->
+        
+    </div><!-- /wrap -->
+</body>
+</html>
